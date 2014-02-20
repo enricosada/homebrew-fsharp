@@ -1,5 +1,12 @@
 language: objective-c
 
+env:
+  - MONO_VERSION="3.2.6"
+
+install:
+  - wget "http://download.xamarin.com/MonoFrameworkMDK/Macx86/MonoFramework-MDK-${MONO_VERSION}.macos10.xamarin.x86.pkg"
+  - sudo installer -pkg "MonoFramework-MDK-${MONO_VERSION}.macos10.xamarin.x86.pkg" -target /
+
 script: 
   - brew install https://raw2.github.com/enricosada/homebrew/cb403d7760cc1e6864fd95766cb1e3ed9b4dbf51/Library/Formula/fsharp.rb
   - brew doctor fsharp
