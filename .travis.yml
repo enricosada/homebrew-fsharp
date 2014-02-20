@@ -2,6 +2,7 @@ language: objective-c
 
 script: 
   - brew install https://raw.github.com/enricosada/homebrew/fsharp/Library/Formula/fsharp.rb
+  - brew doctor fsharp
   - which fsharpi
   - which fsharpc
 
