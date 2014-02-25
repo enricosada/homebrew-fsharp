@@ -4,7 +4,8 @@ env:
   - MONO_VERSION="3.2.6"
 
 install:
-  - brew install https://raw.github.com/enricosada/homebrew-binary/mono/mono.rb --verbose
+  - brew tap enricosada/binary --verbose
+  - brew install enricosada/binary/mono --verbose
 
 script: 
   - which mono
