@@ -4,10 +4,11 @@ env:
   - MONO_VERSION="3.2.6"
 
 install:
-  - wget "http://download.xamarin.com/MonoFrameworkMDK/Macx86/MonoFramework-MDK-${MONO_VERSION}.macos10.xamarin.x86.pkg"
-  - sudo installer -pkg "MonoFramework-MDK-${MONO_VERSION}.macos10.xamarin.x86.pkg" -target /
+  - brew install https://raw.github.com/enricosada/homebrew-binary/mono/mono.rb --verbose
 
 script: 
+  - which mono
+  - mono --version
   - brew install https://raw.github.com/enricosada/homebrew/93f7611623691fe33199f8fb5b07a2335fc3402b/Library/Formula/fsharp.rb --verbose
   - brew doctor fsharp
   - which fsharpi
