@@ -8,7 +8,7 @@ install:
   - sudo installer -pkg "MonoFramework-MDK-${MONO_VERSION}.macos10.xamarin.x86.pkg" -target /
 
 script: 
-  - brew install https://raw2.github.com/enricosada/homebrew/cfbed8f98c2eb685996c5e53c977da7f2fdf6555/Library/Formula/fsharp.rb --HEAD --verbose
+  - brew install https://raw.github.com/enricosada/homebrew/93f7611623691fe33199f8fb5b07a2335fc3402b/Library/Formula/fsharp.rb --verbose
   - brew doctor fsharp
   - which fsharpi
   - which fsharpc
