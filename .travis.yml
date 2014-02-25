@@ -1,11 +1,10 @@
 language: objective-c
 
 install:
-  - brew tap enricosada/binary --verbose
-  - brew install enricosada/binary/mono --verbose
+  - brew tap enricosada/binary
+  - brew install enricosada/binary/mono
 
 script: 
-  - cat /Users/travis/Library/Logs/Homebrew/mono/01.installer
   - which mono
   - mono --version
   - brew install https://raw.github.com/enricosada/homebrew/93f7611623691fe33199f8fb5b07a2335fc3402b/Library/Formula/fsharp.rb --verbose
