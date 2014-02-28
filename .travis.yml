@@ -14,5 +14,8 @@ script:
   - brew doctor fsharp
   - which fsharpi
   - which fsharpc
-  - brew test fsharp
+  - fsharpi --help
+  - fsharpc --help
+  - /Library/Frameworks/Mono.framework/Versions/Current/bin/fsharpc --help
+  - /Library/Frameworks/Mono.framework/Versions/Current/bin/fsharpi --help
 
