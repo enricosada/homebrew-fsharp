@@ -1,7 +1,7 @@
 language: objective-c
 
 env:
-  - MONO_VERSION="3.2.5" FSHARP_FORMULA="https://raw.github.com/enricosada/homebrew/3feb9ff4070d5549434e8afd1f213ca6ed811f86/Library/Formula/fsharp.rb"
+  - MONO_VERSION="3.2.7" FSHARP_FORMULA="https://raw.github.com/enricosada/homebrew/1fa54f8d6937cad6faee84325b5957ffb933a819/Library/Formula/fsharp.rb"
 
 install:
   - wget "http://download.xamarin.com/MonoFrameworkMDK/Macx86/MonoFramework-MDK-${MONO_VERSION}.macos10.xamarin.x86.pkg"
