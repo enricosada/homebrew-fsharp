@@ -10,7 +10,7 @@ install:
 script: 
   - which mono
   - mono --version
-  - wget "https://github.com/fsharp/fsharp/archive/3.1.1.1.tar.gz"
+  - wget "https://github.com/fsharp/fsharp/archive/3.1.1.1.tar.gz" --output-document fsharp-3.1.1.1.tar.gz
   - tar xf fsharp-3.1.1.1.tar.gz
   - cd fsharp-3.1.1.1
   - ./autogen.sh --prefix=/Library/Frameworks/Mono.framework/Versions/3.2.7
