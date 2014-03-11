@@ -9,7 +9,7 @@ install:
 
 script:
   - wget -qO- ${FSHARP_FORMULA} | cat
-  - brew install ${FSHARP_FORMULA} --verbose --replace-mono-current
+  - sudo brew install ${FSHARP_FORMULA} --verbose --replace-mono-current
   - brew doctor fsharp
   - which fsharpi
   - which fsharpc
